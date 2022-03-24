@@ -8,10 +8,10 @@
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
     // 2: 사용자 인증
-    String redirectUrl = "4.html?error=login-failed.."; // 인증 실패시 요청 될 url
+    String redirectUrl = "https://fsscpa.github.io/fss/login.html?error=login-failed.."; // 인증 실패시 요청 될 url
     for (int i = 0; i < users.length; i++) {
         if (users[i].equals(id) && passwords[i].equals(pw))
-            redirectUrl = "5.html" // 인증 성공 시 재 요청 url
+            redirectUrl = "https://fsscpa.github.io/fss/5.html" // 인증 성공 시 재 요청 url
     }
     response.sendRedirect(redirectUrl);
 %>
