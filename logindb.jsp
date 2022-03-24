@@ -5,8 +5,8 @@
     String[] users = {"jisuekaz"};
     String[] passwords = {"Zlddhvl8531!!"};
     // 1: form 으로부터 전달된 데이터를 변수에 저장.
-    String id = request.getParameter("USERID");
-    String pw = request.getParameter("PASSWD");
+    String id = request.getParameter("id");
+    String pw = request.getParameter("pw");
     // 2: 사용자 인증
     String redirectUrl = "4.html?error=login-failed.."; // 인증 실패시 요청 될 url
     for (int i = 0; i < users.length; i++) {
